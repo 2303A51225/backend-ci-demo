@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <h1>Employee Registration Form</h1>
+    <form action="submit_registration" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id=phone name=phone required><br><br>
+
+            <label for=address>Address:</label><br>
+            <textarea id=address name=address rows=4 cols=40></textarea><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="department">Department:</label>
+<select id="department" name="department" required>
+    <option value="">--Select--</option>
+    <option value="CSE">Computer Science and Engineering</option>
+    <option value="ECE">Electronics and Communication Engineering</option>
+    <option value="EEE">Electrical and Electronics Engineering</option>
+    <option value="ME">Mechanical Engineering</option>
+    <option value="CE">Civil Engineering</option>
+    <option value="IT">Information Technology</option>
+    <option value="BT">Biotechnology</option>
+    <option value="MBA">Management Studies (MBA)</option>
+    <option value="BSc">Science (B.Sc)</option>
+    <option value="BCom">Commerce (B.Com)</option>
+</select><br><br>
+
+                
+
+        </fieldset>
+
+        
+        <input type=submit value=Register>
+        </form></body></html>
